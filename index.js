@@ -1,20 +1,16 @@
 'use strict'
 
-const rot = require('rot')
 const crypto197shahutk = require('crypto197shahutk')
-const isThirteen = require('is-thirteen')
 
 /**
  * Constructs a new messsage object to encode messages
  *
  * @param {String} text
- * @param {Number} securityLevel
  * @constructor
  */
-function Message (text, securityLevel) {
+function Message (text) {
   const self = this
   self.text = text
-  self.securityLevel = securityLevel || 13
 }
 
 /**
@@ -25,9 +21,6 @@ function Message (text, securityLevel) {
  */
 Message.prototype.encode = function (password) {
   const self = this
-  if (isThirteen(self.securityLevel).thirteen()) {
-    return rot(self.text)
-  }
   return crypto197shahutk.encode(self.text, password, 'vigenere')
 }
 
@@ -39,9 +32,6 @@ Message.prototype.encode = function (password) {
  */
 Message.prototype.decode = function (password) {
   const self = this
-  if (isThirteen(self.securityLevel).thirteen()) {
-    return rot(self.text)
-  }
   return crypto197shahutk.decode(self.text, password, 'vigenere')
 }
 
