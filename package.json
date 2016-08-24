@@ -1,0 +1,41 @@
+{
+  "name": "ssr-fieldkit-message",
+  "version": "0.0.1",
+  "description": "A library to create disposable, short-lived messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "environment=testing ./node_modules/.bin/mocha --reporter=dot --timeout=1350 tests/\\*.js",
+    "lint": "./node_modules/.bin/standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssr-example/message.git"
+  },
+  "keywords": [
+    "ssr",
+    "fieldkit",
+    "example"
+  ],
+  "author": "Markus Tacker <markus@resourceful-humans.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssr-example/message/issues"
+  },
+  "homepage": "https://github.com/ssr-example/message#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "ghooks": "^1.3.2",
+    "mocha": "^3.0.2",
+    "standard": "^8.0.0",
+    "validate-commit-msg": "^2.8.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm test && npm run lint",
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "dependencies": {
+    "rot": "^0.1.0"
+  }
+}
