@@ -13,4 +13,11 @@ describe('Message', () => {
       done()
     })
   })
+  describe('.decode()', () => {
+    it('should decode an encoded message', done => {
+      const m = new Message('Zrrg zr va 5 Zvahgrf va gur fgnvepnfr.')
+      expect(m.decode()).to.equal('Meet me in 5 Minutes in the staircase.')
+      done()
+    })
+  })
 })

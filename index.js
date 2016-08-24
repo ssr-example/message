@@ -23,4 +23,14 @@ Message.prototype.encode = function () {
   return rot(self.text)
 }
 
+/**
+ * Returns the decoded message
+ *
+ * @return {String}
+ */
+Message.prototype.decode = function () {
+  const self = this
+  return rot(self.text)
+}
+
 module.exports = Message
