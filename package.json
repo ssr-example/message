@@ -41,6 +41,7 @@
     }
   },
   "dependencies": {
-    "crypto197shahutk": "^1.1.6"
+    "crypto197shahutk": "^1.1.6",
+    "tcomb": "^3.2.12"
   }
 }

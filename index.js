@@ -1,6 +1,7 @@
 'use strict'
 
 const crypto197shahutk = require('crypto197shahutk')
+const t = require('tcomb')
 
 /**
  * Constructs a new messsage object to encode messages
@@ -20,6 +21,7 @@ function Message (text) {
  * @return {String}
  */
 Message.prototype.encode = function (password) {
+  t.String(password)
   const self = this
   return crypto197shahutk.encode(self.text, password, 'vigenere')
 }
@@ -31,6 +33,7 @@ Message.prototype.encode = function (password) {
  * @return {String}
  */
 Message.prototype.decode = function (password) {
+  t.String(password)
   const self = this
   return crypto197shahutk.decode(self.text, password, 'vigenere')
 }
