@@ -3,10 +3,10 @@
   "description": "A library to create disposable, short-lived messages",
   "main": "index.js",
   "scripts": {
-    "test": "environment=testing ./node_modules/.bin/mocha --reporter=dot --timeout=1350 tests/\\*.js",
-    "test:coverage": "environment=testing ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha tests/\\*.js",
-    "test:coverage-travis": "environment=testing ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R dot --timeout=1350 tests/\\*.js && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage",
-    "lint": "./node_modules/.bin/standard",
+    "test": "environment=testing mocha --reporter=dot --timeout=1350 tests/\\*.js",
+    "test:coverage": "environment=testing istanbul cover _mocha tests/\\*.js",
+    "test:coverage-travis": "environment=testing istanbul cover _mocha --report lcovonly -- -R dot --timeout=1350 tests/\\*.js && cat ./coverage/lcov.info | codacy-coverage && rm -rf ./coverage",
+    "lint": "standard",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
