@@ -14,7 +14,7 @@ describe('Message', () => {
     })
     it('should throw an error if password is empty', done => {
       const m = new Message('Meet me in 5 Minutes in the staircase.')
-      expect(m.encode).to.throw(TypeError, /\[tcomb\]/)
+      expect(m.encode).to.throw(TypeError, /\[tcomb]/)
       done()
     })
   })
@@ -26,7 +26,7 @@ describe('Message', () => {
     })
     it('should throw an error if password is empty', done => {
       const m = new Message('Eigk qx ar 5 Ozrnliu zr mzi ukebjgcji.')
-      expect(m.decode).to.throw(TypeError, /\[tcomb\]/)
+      expect(m.decode).to.throw(TypeError, /\[tcomb]/)
       done()
     })
   })
