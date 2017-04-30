@@ -1,5 +1,7 @@
 # SSR fieldkit message library
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ssr-example/message.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/ssr-example/message.svg?branch=master)](https://travis-ci.org/ssr-example/message)
 [![monitored by greenkeeper.io](https://img.shields.io/badge/greenkeeper.io-monitored-brightgreen.svg)](http://greenkeeper.io/) 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
