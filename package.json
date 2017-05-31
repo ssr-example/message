@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/ssr-example/message#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.1",
     "codacy-coverage": "^2.0.0",
     "husky": "<2.0.0",
     "istanbul": "^0.4.5",
