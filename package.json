@@ -29,7 +29,7 @@
   "devDependencies": {
     "chai": "^4.0.1",
     "codacy-coverage": "^2.0.0",
-    "husky": "<2.0.0",
+    "husky": "0.15.0-beta.2",
     "istanbul": "^0.4.5",
     "mocha": "^4.0.0",
     "semantic-release": "^7.0.1",
