@@ -27,12 +27,12 @@
   },
   "homepage": "https://github.com/ssr-example/message#readme",
   "devDependencies": {
-    "@commitlint/cli": "^5.2.0",
-    "@commitlint/config-angular": "^5.1.1",
+    "@commitlint/cli": "^6.1.0",
+    "@commitlint/config-angular": "^6.1.0",
     "codacy-coverage": "^2.0.0",
-    "husky": "0.15.0-beta.2",
-    "jest": "^22.0.5",
-    "semantic-release": "^11.0.2",
+    "husky": "^0.15.0-rc.6",
+    "jest": "^22.1.4",
+    "semantic-release": "^12.4.1",
     "standard": "^10.0.1"
   },
   "dependencies": {
