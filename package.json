@@ -29,7 +29,7 @@
   "devDependencies": {
     "@commitlint/cli": "^6.1.0",
     "@commitlint/config-angular": "^6.1.0",
-    "codacy-coverage": "^2.0.0",
+    "codacy-coverage": "^3.0.0",
     "husky": "^0.15.0-rc.6",
     "jest": "^22.1.4",
     "semantic-release": "^12.4.1",
