@@ -28,7 +28,7 @@
   "homepage": "https://github.com/ssr-example/message#readme",
   "devDependencies": {
     "@commitlint/cli": "^6.1.0",
-    "@commitlint/config-angular": "^6.1.0",
+    "@commitlint/config-angular": "^7.0.0",
     "codacy-coverage": "^2.0.0",
     "husky": "^0.15.0-rc.6",
     "jest": "^22.1.4",
